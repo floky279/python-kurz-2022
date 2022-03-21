@@ -509,16 +509,16 @@ staty = [
 
 
 
-meno = input("Zadaj region, ktorý ťa zaujíma:")
-regiony = []
-for mesta in staty:
-    if meno == mesta["region"]:
-        regiony.append(mesta["name"])
+name_of_region = input("Zadaj region, ktorý ťa zaujíma:")
+regions = []
+for region in staty:
+    if name_of_region == region["region"]:
+        regions.append(region["name"])
 
-if regiony == []:
-    print("neznamy region")
+if len(regions) > 0:
+    print(regions)
 else:
-    print(regiony)
+    print("Neznamy region")
 
 
 
